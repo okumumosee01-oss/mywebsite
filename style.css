@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(246, 243, 243);
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+#header {
+    background: rgb(0, 0, 0,0.85);
+    height: 70px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /*background: #5386f6;*/
+    color: white;
+    z-index: 3;
+}
+#head1{
+    margin-right: 14px;
+}
+
+#header button {
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(240, 100, 6) ;
+}
+#liveActivity{
+    height:85px;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    position:fixed;
+    z-index: 2;
+}
+
+.activity-track{
+    display:flex;
+    align-items:center;
+    gap:45px;
+    width:max-content;
+    animation:moveActivity 400s linear infinite;
+}
+
+.activity{
+    font-size:14px;
+    font-weight:800;
+    color:#172033;
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.activity::before{
+    content:"●";
+    color:#ff6500;
+    font-size:10px;
+}
+
+.activity-status{
+    color:#ff6500;
+}
+
+.activity-time{
+    color:#b8bec9;
+    font-style:italic;
+    font-weight:700;
+}
+
+@keyframes moveActivity{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
+}
+
+main {
+    padding: 50px;
+}
+
+
+/* THE OVERLAY */
+#chatOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+   z-index: 10;
+   display: none; /*flex*/
+   align-items: center;
+    justify-content: center;
+}
+
+
+/* CLOSE BUTTON */
+#closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 35px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: red;
+}
+
+
+/* CONTENT INSIDE OVERLAY */
+
+.chatPage {
+    width: 500px;
+    height: 400px;
+    background: rgb(247, 244, 244);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#register{
+    background-color: rgb(255 102 0 / var(--tw-bg-opacity, 1));
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial;
+}
+
+
+.site-footer {
+    min-height: 180px;
+
+    background: #6d3b02;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    color: white;
+}
+.site-footer img{
+    width: 40px;
+}
+.socials {
+    display: flex;
+
+    gap: 35px;
+}
+.socials a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    transition: 0.3s;
+}
+
+
+.socials a:hover {
+    transform: translateY(-5px);
+
+    opacity: 0.7;
+}
