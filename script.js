@@ -1,7 +1,7 @@
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
 const chatOverlay = document.getElementById("chatOverlay");
-const base_link='https://mulaearn.com/register.php?ref=EstherH'
+const base_link='https://www.maligain.com/register?ref=Yourcoach'
 
 openBtn.addEventListener("click", function () {
 
