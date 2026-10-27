@@ -146,3 +146,19 @@ body{
 @media(max-width:600px){
     #profiles{grid-template-columns:1fr;padding:15px}
 }
+/* Small visual refinements for the international profile cards */
+#profiles { gap: 22px; padding: 22px 8px; }
+.profile-card { min-height: 270px; border-radius: 20px; padding: 21px; box-shadow: 0 8px 24px rgba(20,34,56,.055); transition: transform .2s ease, box-shadow .2s ease; }
+.profile-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(20,34,56,.11); }
+.avatar-wrapper { width: 56px; height: 56px; }
+.avatar-wrapper img { border-radius: 16px; }
+.online-dot { width: 15px; height: 15px; right: -2px; bottom: -2px; border-width: 3px; }
+.name { color: #17263b; font-size: 19px; }
+.location { align-items: center; color: #64748b; font-size: 12px; }
+.active { border-color: #ffd2b8; background: #fff5ee; }
+.active a { color: #c95b20; }
+.teach-btn { background: #173b35; transition: background .2s; }
+.teach-btn:hover { background: #e86b2a; }
+.chat-btn { background: #f0f3f7; }
+.chat-btn img { width: 24px; height: 24px; object-fit: contain; }
+@media(max-width: 600px) { #profiles { gap: 14px; padding: 14px 4px; } .profile-card { padding: 18px; } }
