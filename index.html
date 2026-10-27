@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="typing.css">
     <link rel="stylesheet" href="foreigners.css">
+    <link rel="stylesheet" href="hotels.css">
     <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=z9btfzlfqe67"></script>
 </head>
 
@@ -25,16 +26,43 @@
     <!-- NORMAL WEBSITE -->
 
     <div id="header">
-        <h2><span id="head1"><button>S</button></span> STANZAN</h2>
-        <button id="openBtn" class="glow-btn">Open Chat</button>
+        <div id="top">
+            <h2><span id="head1"><button>S</button></span> STANZAN</h2>
+            <button id="openBtn" class="glow-btn">Open Chat</button> 
+        </div>      
+        <div id="liveActivity"></div>
     </div>
     
     <main>
         <div id="chatOverla">
- <div id="liveActivity"></div>
         <h1>Your Gateway to chat, lets start!</h1>
         <div id="profiles"></div>
         </div>
+        <section id="hotelSection" aria-labelledby="hotelTitle">
+            <div class="section-heading">
+                <p class="section-eyebrow">Explore & unwind</p>
+                <h2 id="hotelTitle">Review, tell us more</h2>
+                <p>Give travel inspiration for city breaks, coastal escapes and relaxing weekends. Reviews given are used to motivate new clients into visiting, and improvement of performance atour amenities.</p>
+            </div>
+            <div id="hotelGrid" class="hotel-grid" aria-live="polite"></div>
+            <p class="hotel-disclaimer">Hotel cards are illustrative travel suggestions, not verified guest reviews or live prices. Open to access verified reviews</p>
+        </section>
+
+        <section id="investmentSection" aria-labelledby="investmentTitle">
+            <div class="investment-panel">
+                <div>
+                    <p class="section-eyebrow">Plan with purpose</p>
+                    <h2 id="investmentTitle">Make your next money move an informed one.</h2>
+                    <p>Explore the basics before committing your money. Understand the risks, compare fees, check the provider's regulator.</p>
+                    <a class="investment-cta" href="https://mulaearn.com/register.php?ref=EstherH" target="_blank" rel="noopener noreferrer">Learn from Stan’s Inc ↗</a>
+                </div>
+                <div class="investment-points">
+                    <div class="investment-point">01 &nbsp; Set a goal and a realistic time horizon </div>
+                    <div class="investment-point">02 &nbsp; Explore the options given among the list</div>
+                    <div class="investment-point">03 &nbsp; Investment options on our platform coming soon!</div>
+                </div>
+            </div>
+        </section>
        
     </main>
 
@@ -46,46 +74,38 @@
             <h1>Register to get started here!</h1>
 
            <li>
-                <p>1. Click <a href="https://www.maligain.com/register?ref=Yourcoach">here</a> or button below to start</p>
+                <p>1. Click <a href="https://mulaearn.com/register.php?ref=EstherH">here</a> or button below to start</p>
                 <p>2. Fill your username without spaces e.g Agent105</p>
                 <p>3. Fill your email, phone number and set a password</p>
                 <p>4. Select your country on the dropdown</p>
                 <p>5. Register and proceed to complete the activation</p>
            </li> 
-           <div><button id="register"><a href="https://www.maligain.com/register?ref=Yourcoach">REGISTER</a></button></div>
+           <div><button id="register"><a href="https://mulaearn.com/register.php?ref=EstherH">REGISTER</a></button></div>
         </div>
 
     </div>
    
     <footer class="site-footer">
-
-        <div>
-            Connect with us
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-mark">S</div>
+                <div><h2>STANZAN</h2><p>Connect. Discover. Grow.</p></div>
+            </div>
+            <div class="footer-copy">A place to connect with people, explore travel ideas and discover useful resources.</div>
+            <div class="footer-connect"><h3>Follow along</h3><div class="socials">
+                <a href="https://www.tiktok.com/@watzap_254734473028?_r=1&_t=ZS-99tcLOUNLQ8" target="_blank" rel="noopener noreferrer" aria-label="Stanzan on TikTok"><img src="images/tiktok.png" alt="TikTok"></a>
+                <a href="https://www.facebook.com/profile.php?id=61593776717466" target="_blank" rel="noopener noreferrer" aria-label="Stanzan on Facebook"><img src="images/facebook.webp" alt="Facebook"></a>
+            </div></div>
         </div>
-
-        <div class="socials">
-
-            <a
-                href="https://www.tiktok.com/@watzap_254734473028?_r=1&_t=ZS-99tcLOUNLQ8"
-                target="_blank"
-            >
-                <img src="images/tiktok.png">
-            </a>
-
-
-            <a
-                href="https://www.facebook.com/profile.php?id=61593776717466"
-                target="_blank"
-            >
-                <img src="images/facebook.webp">
-            </a>
-
-        </div>
-
+        <div class="footer-bottom"><span>© <span id="footerYear"></span> STANZAN</span><span>Stay curious. Connect responsibly.</span></div>
     </footer>
 
 <script src="script.js"></script>
  <script src="foreigners.js"></script>
+ <script src="chat.js"></script>
+ <script src="hotels.js"></script>
+ <script>document.getElementById("footerYear").textContent = new Date().getFullYear();</script>
+
 
 </body>
 </html>
