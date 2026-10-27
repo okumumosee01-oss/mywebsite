@@ -1,14 +1,14 @@
 const users = [
     {
-        name:"Margaret W.", age:38, code:"US", country:"USA",
+        name:"Mincy W.", age:38, code:"US", country:"USA",
         image:"images/margaret.jpg", typing:true
     },
     {
-        name:"Robert H.", age:44, code:"GB", country:"UK",
+        name:"Charles King.", age:44, code:"GB", country:"UK",
         image:"images/robert.jpg", typing:false
     },
     {
-        name:"Helga S.", age:27, code:"DE", country:"GERMANY",
+        name:"Hilda S.", age:27, code:"DE", country:"GERMANY",
         image:"images/helga.jpg", typing:true
     },
     {
@@ -16,19 +16,19 @@ const users = [
         image:"images/karen.jpg", typing:true
     },
     {
-        name:"Lars E.", age:48, code:"SE", country:"SWEDEN",
+        name:"Risper E.", age:48, code:"SE", country:"SWEDEN",
         image:"images/lars.jpg", typing:true
     },
     {
-        name:"Ingrid O.", age:51, code:"NY", country:"NEW YORK",
+        name:"James O.", age:51, code:"NY", country:"NEW YORK",
         image:"images/ingrid.jpg", typing:false
     },
     {
-        name:"Pierre D.", age:31, code:"FR", country:"FRANCE",
+        name:"Nathaniel D.", age:31, code:"FR", country:"FRANCE",
         image:"images/pierre.jpg", typing:true
     },
     {
-        name:"Sofia R.", age:27, code:"IT", country:"ITALY",
+        name:"Purity R.", age:27, code:"IT", country:"ITALY",
         image:"images/sofia.jpg", typing:true
     },
     {
@@ -40,7 +40,7 @@ const users = [
         image:"images/Eunice.jpg", typing:false
     },
     {
-        name:"Erickson S.", age:37, code:"DE", country:"GERMANY",
+        name:"Erick S.", age:37, code:"DE", country:"GERMANY",
         image:"images/erickson.jpg", typing:true
     },
     {
@@ -48,15 +48,15 @@ const users = [
         image:"images/jackson.jpg", typing:true
     },
     {
-        name:"Paula E.", age:48, code:"SE", country:"SWEDEN",
+        name:"Milton E.", age:48, code:"SE", country:"SWEDEN",
         image:"images/Paula.jpg", typing:true
     },
     {
-        name:"Samson O.", age:51, code:"NO", country:"NORWAY",
+        name:"Martin O.", age:51, code:"NO", country:"NORWAY",
         image:"images/samson.jpg", typing:false
     },
     {
-        name:"Elizabeth K.", age:31, code:"CA", country:"CALIFORNIA",
+        name:"Essy K.", age:31, code:"CA", country:"CALIFORNIA",
         image:"images/elizabeth.jpg", typing:true
     },
     {
